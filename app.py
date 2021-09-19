@@ -187,5 +187,3 @@ api.add_resource(Updatedata, "/updatedata")
 api.add_resource(Deletedata, "/deletedata")
 
 app.run(debug=True)
-
-# http://127.0.0.1:5000//register-user?name=Mike&ph_no=3526241578&mail_id=mike@gmail.com&user_id=mike&password=mike@123&c_password=mike@123
