@@ -208,4 +208,4 @@ api.add_resource(Getdata, "/getdata")
 api.add_resource(Updatedata, "/updatedata")
 api.add_resource(Deletedata, "/deletedata")
 
-app.run(debug=True)
+app.run()
