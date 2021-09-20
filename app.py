@@ -5,10 +5,10 @@ import mysql.connector
 app = Flask(__name__)
 api = Api(app)
 conn = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="",
-    database="password_manager_database"
+    host="sql5.freesqldatabase.com",
+    user="sql5438699",
+    password="Ektwg1xgFv",
+    database="sql5438699"
 )
 
 
