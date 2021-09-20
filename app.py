@@ -15,10 +15,10 @@ conn = mysql.connector.connect(
 def register_user(name, phno, mailid, userid, Password, cpassword):
     try:
         conn = mysql.connector.connect(
-            host="localhost",
-            user="root",
-            password="",
-            database="password_manager_database"
+            host="sql5.freesqldatabase.com",
+            user="sql5438699",
+            password="Ektwg1xgFv",
+            database="sql5438699"
         )
         mycursor = conn.cursor()
         mycursor.execute(
@@ -186,4 +186,4 @@ api.add_resource(Getdata, "/getdata")
 api.add_resource(Updatedata, "/updatedata")
 api.add_resource(Deletedata, "/deletedata")
 
-app.run(debug=True)
+app.run()
