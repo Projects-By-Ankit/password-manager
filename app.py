@@ -169,7 +169,8 @@ class Help(Resource):
                                                   """/deletedata?u_name=<Your MRG User Name>&site_name=<Which 
                                                   Web-Site You Want To Delete>&id_num=<Website Id Number> """
                                                   ]}
-        return make_response(jsonify(msghelp, 200))
+        # return make_response(jsonify(msghelp, 200))
+        return jsonify(msghelp)
 
 
 class Ping(Resource):
