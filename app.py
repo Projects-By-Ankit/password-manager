@@ -1,4 +1,5 @@
-from flask import Flask, jsonify, request, make_response
+import os
+from flask import Flask, jsonify, request, make_response, send_from_directory
 from flask_restful import Api, Resource
 import mysql.connector
 
@@ -109,6 +110,14 @@ def delete_data(uname, sitename, idnum):
 
     except Exception as e:
         print(e)
+
+
+app.route('/favicon.ico')
+
+
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, "static"), "favicon.ico",
+                               mimetype="image/vnd.microsoft.icon")
 
 
 class Registerdata(Resource):
